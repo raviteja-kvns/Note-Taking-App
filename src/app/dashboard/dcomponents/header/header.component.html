@@ -1,0 +1,11 @@
+<div class="h-wrapper">
+
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="createNew()">New</button>
+
+    <button class="btn btn-outline-danger my-2 my-sm-0" (click)="deleteNote()">Delete</button>
+
+    <div class="form-inline custom-sr-btn">
+        <input class="form-control mr-sm-2" type="search" [(ngModel)]="searchText" (ngModelChange)="triggerSearchTextChange()" placeholder="Search">
+    </div>
+    
+</div>

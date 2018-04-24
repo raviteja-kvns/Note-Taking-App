@@ -1,0 +1,25 @@
+.edit-pad:empty::before{
+    content: attr(placeholder);
+    color: grey;
+}
+
+.edit-pad:empty::before:focus{
+    content: "";
+}
+
+.edit-pad {
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    white-space: pre;
+    border-radius: 4px;
+}
+
+.edit-pad-txt {
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    font-size: 20px;
+    color: grey;
+    height: 100%;
+}

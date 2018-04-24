@@ -1,0 +1,7 @@
+<div *ngFor="let noteItem of (noteItems | searchFilter: searchText: capturedReferences)" class="note-items-wrapper">
+    <div (click)="onNoteSelect(noteItem)" class="note-item-wrp" [ngClass]="{'active-list-item' : currentSelectedNoteItemRef && (noteItem.uid == currentSelectedNoteItemRef.uid)}">
+        <!--<p>{{noteItem.title}}</p>-->
+        <div class="content-wrp">{{noteItem.content}}</div>
+        <div class="ts-wrp">{{getRelaventTimeStamp_For_View(noteItem.timeStamp)}}</div>
+    </div>
+</div>

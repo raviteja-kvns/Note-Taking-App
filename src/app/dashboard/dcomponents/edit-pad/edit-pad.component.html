@@ -1,0 +1,14 @@
+<div 
+  *ngIf="!!currentNote"
+  class="edit-pad"
+  editorCustomNgModel
+  [(customNgModel)]="currentNote.content"
+  [additionalChkFlag]="currentNote.uid"
+  (customNgModelChange)="onEditContent($event)"
+  contenteditable="true"
+  placeholder="Enter your note here ...">
+</div>
+
+<div class="edit-pad-txt" *ngIf="!currentNote">
+  Create a New Note .... !!
+</div>

@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    height: 90%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    /* background-color: #f1f7f9; */
+}
+.header {
+    height: 10%;
+    width: 100%;
+}
+.notes-list {
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 4px;
+    border: 0.5px solid black;    
+}
+.editor {
+    margin-left: 0.5%;
+    width: 78%;
+}
+.d-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-left: 0.5%;
+}
+.h-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.content-wrp {
+    padding: 6px;
+    max-height: 65px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ts-wrp {
+    width: fit-content;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border-top: 0.3px solid grey;
+}
+.note-item-wrp{
+    font-size: small;
+    border-bottom: solid 1px grey;
+}
+.note-item-wrp:hover{
+    background-color: #CFE4ED;  
+}
+
+.active-list-item {
+    background-color: #BDE6F1;
+}
+
+.custom-sr-btn {
+    width: 60%;
+    max-width: 180px;
+}

@@ -1,0 +1,22 @@
+<div class="header">
+    <editor-header 
+        [(searchText)]="searchText"
+        (deleteNote)="deleteNote()"
+        (createNew)="handleCreateNewNote()">
+    </editor-header>
+</div>
+
+<div class="d-wrapper">
+    <div class="notes-list">
+        <editor-noteslist
+            [(searchText)]="searchText"
+            (currentSelectedNote)="currentSelectedNote($event)">
+        </editor-noteslist>
+    </div>
+
+    <div class="editor">
+        <editor-edit-pad 
+            [currentNote]="currentItemForEditing">
+        </editor-edit-pad>
+    </div>
+</div>
